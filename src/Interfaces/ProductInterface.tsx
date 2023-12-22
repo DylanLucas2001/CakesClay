@@ -1,14 +1,20 @@
 interface IProductData {
-        "id": number,
-        "attributes": {
-            "Name": string,
-            "body": any,
-            "createdAt": string,
-            "updatedAt": string,
-            "publishedAt": string
-        },
-        "ProductImage":{
-            "data":any
-        }
+    "id": number,
+    "attributes": {
+        "name": string,
+        "body": string,
+        "productImage": {
+            "data": [
+                {
+                    "id": number,
+                    "attributes": {
+                        "name": string,
+                        "url": string,
+                        },
+                    }
+                ]
+            }
+    },
+    
     }
 export default IProductData;
